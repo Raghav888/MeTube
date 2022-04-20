@@ -1,0 +1,76 @@
+.cart-button {
+    padding-left: 1rem;
+}
+
+.head-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: var(--primary-background-color);
+}
+
+.logo-brand {
+    height: 8rem;
+    width: 8rem;
+}
+
+.search-button {
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    background-color: var(--primary-button-color);
+}
+
+.search-box {
+    height: 2rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-button-color);
+}
+
+.menu {
+    background: var(--primary-background-color);
+    border-radius: 8px;
+    position: absolute;
+    top: 6rem;
+    right: 0;
+    width: 15rem;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+.menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    border-bottom: 1px solid #dddddd;
+}
+
+.menu li .dropdown-option {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem 2rem;
+    display: block;
+    font-size: 2rem;
+}
+
+.user-icon {
+    border-radius: 50%;
+    border: 2px solid var(--primary-button-color);
+    padding: 8px;
+    margin-left: 5rem;
+}
